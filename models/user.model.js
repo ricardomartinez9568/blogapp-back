@@ -13,7 +13,10 @@ var userSchema = new mongoose.Schema({
     password: {
         type: String
     },
-    saltSecret: String
+    saltSecret: String,
+    notes: {
+        type: Array
+    },
 });
 
 

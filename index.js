@@ -24,7 +24,7 @@ app.use('/api',rtsIndex)
 '/api/register'
 
 
-mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true },(err,client) =>{
+mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false },(err,client) =>{
     if (err) throw err;
     console.log('Successfully connected to DB server');
 })
